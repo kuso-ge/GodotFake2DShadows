@@ -93,8 +93,8 @@ But how or why does the top part move away from the spotlight when we do this? I
 
 https://myiasis.itch.io/
 
-https://ko-fi.com/myiasis
-
 https://www.youtube.com/user/noTmiZ
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E03GW77)
 
 //TODO: I'll continue the rest when I get another free time (cries in the corner)
