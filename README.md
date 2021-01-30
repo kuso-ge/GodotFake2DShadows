@@ -91,6 +91,8 @@ But how or why does the top part move away from the spotlight when we do this? I
 ![alt text](https://i.imgur.com/YrXUr92.png)
 
 
-You can always buy me a coffee if this article/repo helped @ https://ko-fi.com/myiasis
+https://myiasis.itch.io/
+https://ko-fi.com/myiasis
+https://www.youtube.com/user/noTmiZ
 
 //TODO: I'll continue the rest when I get another free time (cries in the corner)
