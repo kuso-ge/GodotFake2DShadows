@@ -92,7 +92,9 @@ But how or why does the top part move away from the spotlight when we do this? I
 
 
 https://myiasis.itch.io/
+
 https://ko-fi.com/myiasis
+
 https://www.youtube.com/user/noTmiZ
 
 //TODO: I'll continue the rest when I get another free time (cries in the corner)
