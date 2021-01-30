@@ -42,13 +42,13 @@ p3 = Vector2(64,64)
 p4 = Vector2(-64,64)
 ```
 
-But! The sprite is drawn starting from the origin of the object and not on global coordinates. 
-However, if you look at the values, it would essentially create a 128x128 texture!!
+However! The sprite is drawn starting from the origin of the object and not on global coordinates. 
+Also, if you look at the values, it would essentially create a 128x128 texture!!
 Why is this? Well, let's look at the values we used.
 
 ![alt text](https://i.imgur.com/dvWaCgu.png)
 
-So we divide the $Sprite width and height by 2:
+So we divide the $Sprite width and height by 2, so we get these values:
 ```
 p1 = Vector2(-32,-32) 
 p2 = Vector2(32,-32)
@@ -73,5 +73,21 @@ p4 = Vector2(-32,32) + offset_bottomLeft
 ```
 
 Any values we plug in to the offset vectors should allow us to move the drawn texture(shadow) anywhere we want and we can even SKEW the drawn shadow too!
+By now we should have a drawn texture(shadow) faithfully following the main node/object/unit and skewed and positioned with however we wanted using the offset vectors. 
+But something still looks off, most specially if we want to make the Sprite Jump in 2d top down world! 
+
+Now the math here would depend on where you want the Shadow to be cast,(the location of our imaginary sun/light, and whether it is local spot light or a global sun light). 
+For a spot light effect, we could do
+```
+var light_vector = spot_light.global_position() - unit.global_position()
+```
+Then we subract the light_vector to the top parts of the shadow/texture to make the top part move away from the spot_light:
+```
+p1 = Vector(-32,-32) - light_vector
+p2 = Vector2(32,-32) - light_vector 
+```
+But how or why does the top part move away from the spotlight when we do this? It's simple.
+
+![alt text](https://i.imgur.com/YrXUr92.png)
 
 //TODO: I'll continue the rest when I get another free time (cries in the corner)
