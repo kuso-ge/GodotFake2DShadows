@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Unit.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.607843, 0.94902, 0.419608, 0.443137 )
+position = Vector2( 1, -1 )
+scale = Vector2( 15.9688, 9.375 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Unit" parent="." instance=ExtResource( 2 )]
+position = Vector2( 441, 276 )
+offset_topLeft = Vector2( 20, 20 )
+offset_topRight = Vector2( 20, 20 )
+factor_topLeft = 2
+y_bottomLeft = -1
+y_bottomRight = -1
