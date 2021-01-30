@@ -2,7 +2,7 @@
 
 Disclaimer:
 
-This method uses draw_primitive to draw a copy of your Sprite, so in essence it really is a fake shadow that doesn't interact with the environment. 
+This method uses draw_primitive to draw a copy of your Sprite, so in essence it really is a fake shadow that doesn't interact with the environment. But why would you use this over something like a duplicated sprite, modulated black and 0.5 alpha? Because this method allows you to dynamically shape and color the shadow. 
 I haven't tested if a shader version of this is faster. This was just a proof of concept for 2d fake projected shadows. 
 
 So how does this work?
